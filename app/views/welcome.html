@@ -1,0 +1,273 @@
+ <!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>ที่อยู่จัดส่งสินค้า</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700" rel="stylesheet">
+   
+
+    
+    
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="/jquery.Thailand.js/dependencies/JQL.min.js"></script>
+    <script type="text/javascript" src="/jquery.Thailand.js/dependencies/typeahead.bundle.js"></script>  
+    <link rel="stylesheet" href="/jquery.Thailand.js/dist/jquery.Thailand.min.css">
+    <link rel="stylesheet" href="/webvUI.min.css">
+    <link rel="stylesheet" href="/webvUI-menu.min.css">
+  
+  <script type="text/javascript" src="/jquery.Thailand.js/dist/jquery.Thailand.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
+   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> 
+     
+  </head>
+ 
+  
+  
+<body>
+    
+    <script type="text/javascript">
+    //load facebbok messenger Extention
+    
+      (function(d, s, id){
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) {return;}
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/messenger.Extensions.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'Messenger'));
+     
+   </script>
+
+    
+        <form id ="my_form"  >
+     <input type="hidden" name="UserID" id="psid" value="{{ id}}"/>
+     <input type="hidden" name="Block" id="block" value="{{ block}}"/>
+    <div class="main-container">
+        <div class="page button js_show">
+            <div class="page__hd">
+            <img src="https://preview.ibb.co/mvtqZS/logo.jpg" alt="Please fill in every box down below" style="width:100%;">
+               
+            </div>
+         
+          <div class="page__bd page__bd_spacing">
+
+                <div class="webvUI-cells__title">
+                    ชื่อ
+                </div>
+                <div class="webvUI-cells">
+                    <div class="webvUI-cell">
+                        <div class="webvUI-cell__bd">
+                            <input class="webvUI-input" type="text" placeholder=" ชื่อ" name="Name"  required> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="webvUI-cells__title">
+                    เบอร์
+                </div>
+                <div class="webvUI-cells">
+                    <div class="webvUI-cell">
+                        <div class="webvUI-cell__bd">
+                            <input class="webvUI-input" type="text" placeholder="เบอร์" name="Tel" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="webvUI-cells__title">
+                    บ้านเลขที่ ถนน หมู่
+                </div>
+                <div class="webvUI-cells">
+                    <div class="webvUI-cell">
+                        <div class="webvUI-cell__bd">
+                            <input class="webvUI-input" type="text" placeholder="บ้านเลขที่ ถนน หมู่" name="Address"  required>
+                        </div>
+                    </div>
+                </div>
+  
+              
+               <div class="webvUI-cells__title">
+                    ตำบล/แขวง
+                </div>
+                <div class="webvUI-cells">
+                    <div class="webvUI-cell">
+                        <div class="webvUI-cell__bd">
+                            <input class="webvUI-input" type="text" placeholder=" ตำบล/แขวง" name ="Sub-District" id="district"  required>
+                        </div>
+                    </div>
+                </div>
+                
+
+               
+
+                <div class="webvUI-cells__title">
+                   อำเภอ/เขต
+                </div>
+                <div class="webvUI-cells">
+                    <div class="webvUI-cell">
+                        <div class="webvUI-cell__bd">
+                            <input class="webvUI-input" type="text" placeholder=" อำเภอ/เขต" name="District" id="amphoe"  required>
+                        </div>
+                    </div>
+                </div>
+
+              
+              <div class="webvUI-cells__title">
+                จังหวัด
+                </div>
+                <div class="webvUI-cells">
+                    <div class="webvUI-cell">
+                        <div class="webvUI-cell__bd">
+                            <input class="webvUI-input" type="text" placeholder=" จังหวัด" name="City" id="province" required>
+                      
+                      </div>
+                    </div>
+                </div>
+                <div class="webvUI-cells__title">
+                    รหัสไปรษณีย์
+                </div>
+                <div class="webvUI-cells">
+                    <div class="webvUI-cell">
+                        <div class="webvUI-cell__bd">
+                            <input class="webvUI-input" type="text" placeholder="รหัสไปรษณีย์" name="Zip" id="zipcode"  required>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="webvUI-cells__title">
+                    หมายเหตุ
+                </div>
+                <div class="webvUI-cells">
+                    <div class="webvUI-cell">
+                        <div class="webvUI-cell__bd">
+                            <input class="webvUI-input" type="text" placeholder="หมายเหตุ" name="Note" id="note">
+                        </div>
+                    </div>
+                </div>      
+
+                <button typr="submit" class="webvUI-btn webvUI-btn_primary" href="#"  id="submit"> ส่ง</button>
+            </div>
+        </div>
+    </div>
+          
+  </form>
+      <script>
+    $.Thailand({ 
+    
+    // path หรือ url ไปยัง database เลือกได้ 4 แบบตามความเหมาะสม 
+    // db.json, db.zip, geodb.json, geodb.zip
+    database: '/jquery.Thailand.js/database/db.json', 
+    
+    // auto, zip หรือ json; การใส่ auto ลงไป ระบบจะแยกแยะเอาเองตามนามสกุลของ database
+    // (ไม่ระบุก็ได้ ค่า default คือ auto)
+    database_type: 'auto', 
+    
+    // อ่านหัวข้อถัดไป
+    // (ปกติไม่ต้องระบุ)
+    zip_worker_path: false, 
+    
+    // ขนาดของตัวเลือกใน Dropdown 
+    // (ไม่ระบุก็ได้ ค่า default คือ 20)
+    autocomplete_size: 20, 
+    
+    // input ของตำบล
+    // (ไม่ระบุก็ได้หากไม่จำเป็นต้องใช้)
+    $district: $('#district'), 
+    
+    // input area code ของตำบล
+    // (ไม่ระบุก็ได้หากไม่จำเป็นต้องใช้)
+    $district_code: $('#district_code'), 
+    
+    // input ของอำเภอ
+    // (ไม่ระบุก็ได้หากไม่จำเป็นต้องใช้)
+    $amphoe: $('#amphoe'), 
+    
+    // input area code ของอำเภอ
+    // (ไม่ระบุก็ได้หากไม่จำเป็นต้องใช้)
+    $amphoe_code: $('#amphoe_code'), 
+    
+    // input ของจังหวัด
+    // (ไม่ระบุก็ได้หากไม่จำเป็นต้องใช้)
+    $province: $('#province'), 
+    
+    // input area code ของจังหวัด
+    // (ไม่ระบุก็ได้หากไม่จำเป็นต้องใช้)
+    $province_code: $('#province_code'), 
+    
+    // input ของรหัสไปรษณีย์
+    // (ไม่ระบุก็ได้หากไม่จำเป็นต้องใช้)
+    $zipcode: $('#zipcode'), 
+    
+    // input ของช่องค้นหา 
+    // (ไม่ระบุก็ได้หากไม่จำเป็นต้องใช้)    
+    
+    // callback เมื่อเกิดการ auto complete ขึ้น
+    // (ไม่ระบุก็ได้หากไม่จำเป็นต้องใช้)
+    onDataFill: function(data){ 
+        console.log('Data Filled', data);
+    },
+    
+    // callback เมื่อโหลดฐานข้อมูลเสร็จและระบบ Auto Complete พร้อมที่จะทำงาน
+    // (ไม่ระบุก็ได้หากไม่จำเป็นต้องใช้)
+    onLoad: function(){ 
+        console.info('Autocomplete is ready!');
+    }
+});
+  </script>
+  </body>
+<script> window.extAsyncInit = function() {console.log("ready")
+                                $('#my_form').submit(function(event){
+                                            event.preventDefault();
+                                            console.log("submit");
+                                            const formdata = $('#my_form').serialize()
+                                            console.log("submit",formdata);
+                                            $.post('/actions',formdata,function(data){
+                                              MessengerExtensions.requestCloseBrowser(
+                                      function() {
+                                        console.log("Webview closing");
+                                          
+                                      },
+                                      function(w) {
+                                        
+                                          alert("closing webview err" + w);
+                                      }
+                                    );
+                                            
+                                            })
+                                          })
+                                          
+                                          }</script>
+</html>
+  <div class="page__bd page__bd_spacing">
+
+                <div class="webvUI-cells__title">
+                    เลือกสินค้า
+                </div>
+
+                <div class="webvUI-cells webvUI-cells_radio">
+                    <label class="webvUI-cell webvUI-check__label" for="A">
+                        <div class="webvUI-cell__bd" >
+                            <p>
+                                A
+                            </p>
+                        </div>
+                        <div class="webvUI-cell__ft">
+                            <input type="radio" class="webvUI-check" name="Selection" id="A" value="A">
+                            <span class="webvUI-icon-checked"></span>
+                        </div>
+                    </label>
+                    <label class="webvUI-cell webvUI-check__label" for="B">
+                        <div class="webvUI-cell__bd">
+                            <p>
+                                B
+                            </p>
+                        </div>
+                        <div class="webvUI-cell__ft">
+                            <input type="radio" name="Selection" class="webvUI-check" id="B" checked="checked" value="B">
+                            <span class="webvUI-icon-checked"></span>
+                        </div>
+                    </label>
+                    
+                </div>
